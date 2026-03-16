@@ -1,0 +1,23 @@
+
+[project]
+name = "graphrag_adam"
+version = "0.2.0"
+description = "GraphRAG-based spec-to-code mapping from Protocol/SAP/SDTM to ADaM with Streamlit UI"
+authors = [{name="Your Name"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "PyPDF2>=3.0",
+  "python-docx>=1.0",
+  "networkx>=3.0",
+  "openpyxl>=3.1",
+  "xlrd>=2.0",
+  "pyvis>=0.3.2",
+  "streamlit>=1.30",
+  "pyreadstat>=1.2.7",
+]
+
+[project.scripts]
+graphrag-adam = "graphrag_adam.cli:main"
